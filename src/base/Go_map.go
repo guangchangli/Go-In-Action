@@ -13,7 +13,6 @@ import (
 初始值为 nil make(map[KeyType]ValueType, [cap]) 分配内存
 判断是否存在 v,ok:=map[key]
 delete(map,key)
-
 */
 func init() {
 	carMap := make(map[string]string, 5)
