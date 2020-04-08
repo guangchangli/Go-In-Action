@@ -77,16 +77,16 @@ func main() {
 }
 func makeSlice() {
 	s := make([]string, 3, 5)
-	s=append(s, "append")
+	s = append(s, "append")
 	fmt.Printf("s:%v, len(s): %v, cap(s): %v\n", s, len(s), cap(s))
-	s1:=s
+	s1 := s
 	fmt.Printf("s1:%v, len(s1): %v, cap(s1): %v\n", s1, len(s1), cap(s1))
-	s1[1]="change"
+	s1[1] = "change"
 	fmt.Printf("s:%v, len(s): %v, cap(s): %v\n", s, len(s), cap(s))
 	fmt.Printf("s1:%v, len(s1): %v, cap(s1): %v\n", s1, len(s1), cap(s1))
 }
 
-func copySlice(){
+func copySlice() {
 	// copy()复制切片
 	a := []int{1, 2, 3, 4, 5}
 	c := make([]int, 5, 5)
@@ -97,21 +97,21 @@ func copySlice(){
 	fmt.Println(a) //[1 2 3 4 5]
 	fmt.Println(c) //[1000 2 3 4 5]
 }
-func deleteElement(){
-	s:=[]int{1,2,3,4,5}
-	s=append(s[:3],s[4:]...)
-	fmt.Printf("%v\n",s)
+func deleteElement() {
+	s := []int{1, 2, 3, 4, 5}
+	s = append(s[:3], s[4:]...)
+	fmt.Printf("%v\n", s)
 }
 
-func demo(){
+func demo() {
 	var a = make([]string, 5, 10)
 	for i := 0; i < 10; i++ {
 		a = append(a, fmt.Sprintf("%v", i))
 	}
-	fmt.Printf("a: len(a):%v,cap(a):%v\n",len(a),cap(a))
+	fmt.Printf("a: len(a):%v,cap(a):%v\n", len(a), cap(a))
 }
 
-func sortSlice(){
+func sortSlice() {
 	var a = [...]int{3, 7, 8, 9, 1}
 	//s:=make([]int, len(a))
 	//for i:=0;i<len(a) ;i++  {

@@ -6,12 +6,12 @@ import (
 
 //流程控制
 /**
-	for循环可以通过break、goto、return、panic语句强制退出循环。
-	fallthrough语法可以执行满足条件的case的下一个case
-	for range遍历数组、切片、字符串、map 及 channel
-		数组、切片、字符串返回索引和值。
-		map返回键和值。
-		通道（channel）只返回通道内的值
+for循环可以通过break、goto、return、panic语句强制退出循环。
+fallthrough语法可以执行满足条件的case的下一个case
+for range遍历数组、切片、字符串、map 及 channel
+	数组、切片、字符串返回索引和值。
+	map返回键和值。
+	通道（channel）只返回通道内的值
 
 */
 func main() {
