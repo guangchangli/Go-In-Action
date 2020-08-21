@@ -18,7 +18,7 @@ func (stu *man) Speak(think string) (talk string) {
 }
 
 func main() {
-	var peo People = &man{}
+	var peo people = &man{}
 	think := "bitch"
 	fmt.Println(peo.Speak(think))
 }

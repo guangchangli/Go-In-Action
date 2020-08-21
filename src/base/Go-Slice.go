@@ -69,11 +69,12 @@ func init() {
 	println("init out -----------")
 }
 func main() {
-	makeSlice()
-	copySlice()
-	deleteElement()
-	demo()
-	sortSlice()
+	//makeSlice()
+	//copySlice()
+	//deleteElement()
+	//demo()
+	//sortSlice()
+	reviewSlice()
 }
 func makeSlice() {
 	s := make([]string, 3, 5)
@@ -128,4 +129,27 @@ func sortSlice() {
 	//降序排列
 	sort.Sort(sort.Reverse(sort.IntSlice(a[:])))
 	fmt.Println(a)
+}
+func reviewSlice(){
+	println("review slice")
+	var arr =[...]int{1,2,3}
+	var a []int
+	b:=make([]int,1,2)
+	d:=arr[0:]
+	fmt.Println(len(d),cap(d))
+	i := copy(a, b)
+	fmt.Println(len(b))
+	fmt.Println(cap(b))
+	fmt.Print(i)
+	fmt.Println()
+	var array=[]int{1,2,3,4,5}
+	s := array[:]
+	for index,value :=range s{
+		fmt.Println(index,value)
+	}
+	//删除
+	s= append(s[:1],s[2:]...)
+	for index,value :=range s{
+		fmt.Println(index,value)
+	}
 }

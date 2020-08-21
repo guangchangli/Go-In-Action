@@ -22,6 +22,7 @@ var sum = 0
 type calcu func(int, int) int
 
 func main() {
+	fmt.Printf("%T\n",do)
 	println(funcDemo(0, 10, 20, 30))
 	ret2 := calc(10, 20, ad)
 	fmt.Println(ret2) //30
